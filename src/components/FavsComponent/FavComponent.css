@@ -1,0 +1,5 @@
+.fav-component {
+  display: grid;
+  grid-template: 1fr;
+  grid-gap: 1rem;
+}

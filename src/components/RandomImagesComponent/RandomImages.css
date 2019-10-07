@@ -1,0 +1,38 @@
+.random-images {
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  padding: 10px 10px 30px 10px;
+  box-shadow: 1px 5px gray;
+  border: 1px solid gray;
+  position: relative;
+}
+
+.image-container__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-container__actions {
+  display: flex;
+  position: absolute;
+  left: 30%;
+}
+
+.image-container__actions .action {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  background-color: #fff;
+}
+.image-container__actions .action:last-of-type {
+  margin: 0;
+}

@@ -1,0 +1,36 @@
+:root {
+  --active-color: #fff;
+  --active-background: #000;
+  --item-color: rebeccapurple;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: var(--item-color);
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: var(--item-color);
+}
+
+.nav__item--active {
+  background-color: var(--active-background);
+  color: var(--active-color);
+}
+
+.nav__item--active a {
+  color: #fff;
+}
