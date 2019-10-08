@@ -19,7 +19,7 @@ class HttpClient {
   }
 
   delete(url) {
-    return this.axiosInstance.delete(`${url}`);
+    return this.axiosInstance.delete(url);
   }
 }
 
