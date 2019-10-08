@@ -12,7 +12,7 @@ export const favoritesReducer = (state = { favorites: [] }, action) => {
       );
     case REMOVE_FAVORITE:
       const newFavs = [...state.favorites];
-      const index = newFavs.indexOf(action.payload.url);
+      const index = newFavs.findIndex(fav => fav.id == action.payload.id);
       newFavs.splice(index, 1);
 
       return Object.assign(
