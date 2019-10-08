@@ -18,20 +18,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  color: var(--item-color);
-}
-
-.nav__item a {
   text-decoration: none;
+  padding: 1rem;
   color: var(--item-color);
 }
 
 .nav__item--active {
   background-color: var(--active-background);
   color: var(--active-color);
-}
-
-.nav__item--active a {
-  color: #fff;
 }
