@@ -23,19 +23,19 @@ const RandomImages = props => {
         <div className="image-container__image">
           <img src={picture.image.url} alt="Soft kitty warm kitty" />
         </div>
-        <div className="image-container__actions">
-          <div className="action" onClick={getAnotherImage}>
-            x
-          </div>
-          <div
-            className="action"
-            onClick={() => {
-              props.addFavorite(picture.image.url);
-              getAnotherImage();
-            }}
-          >
-            ❤
-          </div>
+      </div>
+      <div className="image-container__actions">
+        <div className="action" onClick={getAnotherImage}>
+          x
+        </div>
+        <div
+          className="action"
+          onClick={() => {
+            props.addFavorite(picture.image.url);
+            getAnotherImage();
+          }}
+        >
+          ❤
         </div>
       </div>
     </div>
