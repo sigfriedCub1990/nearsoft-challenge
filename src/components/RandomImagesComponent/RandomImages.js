@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 import "./RandomImages.css";
 
 //* Actions
-import { addFavorite } from "../../redux/actions/favoritesActions";
+import { addFavoriteAsync } from "../../redux/actions/favoritesActions";
 
 const RandomImages = props => {
   const [retry, setRetry] = useState(false);
@@ -33,7 +33,7 @@ const RandomImages = props => {
         <div
           className="action"
           onClick={() => {
-            props.addFavorite(picture.image.url);
+            props.addFavoriteAsync(picture.image.url, picture.image.id);
             getAnotherImage();
           }}
         >
@@ -45,7 +45,7 @@ const RandomImages = props => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  addFavorite: url => dispatch(addFavorite({ url }))
+  addFavoriteAsync: (url, id) => dispatch(addFavoriteAsync({ url, id }))
 });
 
 export default connect(
