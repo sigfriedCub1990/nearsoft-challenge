@@ -8,7 +8,7 @@ const FavsComponent = props => {
   return (
     <div className="fav-component">
       {props.favorites.map((url, index) => (
-        <div className="favorite">
+        <div className="favorite" key={index}>
           <img src={url} alt="Soft kitty" />
           <div
             className="favorite__action"
