@@ -4,7 +4,7 @@ export const favoritesReducer = (state = { favorites: [] }, action) => {
   switch (action.type) {
     case ADD_FAVORITE:
       const newFavsArray = [...state.favorites];
-      newFavsArray.push(action.payload.url);
+      newFavsArray.push({ url: action.payload.url, id: action.payload.id });
       return Object.assign(
         {},
         { favorites: state.favorites },
