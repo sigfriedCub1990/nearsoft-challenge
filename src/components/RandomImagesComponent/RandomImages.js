@@ -5,17 +5,19 @@ import { connect } from "react-redux";
 
 //* Styles
 import "./RandomImages.css";
+
+//* Actions
 import { addFavorite } from "../../redux/actions/favoritesActions";
 
 const RandomImages = props => {
   const [retry, setRetry] = useState(false);
   const picture = useApiCall(retry);
 
-  if (!picture) return <div>Loooading...</div>;
-
   const getAnotherImage = () => {
     setRetry(!retry);
   };
+
+  if (!picture) return <div>Loading...</div>;
 
   return (
     <div className="random-images">
