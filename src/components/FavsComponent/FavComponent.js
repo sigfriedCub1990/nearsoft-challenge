@@ -9,10 +9,11 @@ const FavsComponent = props => {
     <div className="fav-component">
       {props.favorites.map((url, index) => (
         <div className="favorite">
-          <div className="image-container" key={index}>
-            <img src={url} alt="Soft kitty" />
-          </div>
-          <div className="remove" onClick={() => props.removeFav(url)}>
+          <img src={url} alt="Soft kitty" />
+          <div
+            className="favorite__action"
+            onClick={() => props.removeFav(url)}
+          >
             x
           </div>
         </div>
