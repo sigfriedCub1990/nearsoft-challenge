@@ -17,6 +17,10 @@ class HttpClient {
   post(url, data) {
     return this.axiosInstance.post(`${url}`, data);
   }
+
+  delete(url) {
+    return this.axiosInstance.delete(`${url}`);
+  }
 }
 
 const client = new HttpClient();
