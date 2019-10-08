@@ -36,3 +36,10 @@
   color: #fff;
   background-color: rgba(255, 0, 0, 0.9);
 }
+
+@media only screen and (min-width: 960px) {
+  .fav-component {
+    grid-template: auto / repeat(3, 1fr);
+    column-gap: 10px;
+  }
+}
