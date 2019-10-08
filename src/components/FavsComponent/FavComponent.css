@@ -1,5 +1,38 @@
 .fav-component {
   display: grid;
-  grid-template: 1fr;
-  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  margin-top: 2rem;
+}
+
+.favorite {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.favorite img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.favorite__action {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.2);
+  top: 0;
+  right: 4px;
+}
+
+.favorite__action:hover {
+  color: #fff;
+  background-color: rgba(255, 0, 0, 0.9);
 }
