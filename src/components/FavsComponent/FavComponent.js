@@ -12,7 +12,7 @@ const FavsComponent = props => {
           <img src={url} alt="Soft kitty" />
           <div
             className="favorite__action"
-            onClick={() => props.removeFavAsync({ id, url })}
+            onClick={() => props.removeFavAsync(id, url)}
           >
             x
           </div>
@@ -23,7 +23,7 @@ const FavsComponent = props => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  removeFavAsync: id => dispatch(removeFavoriteAsync({ id }))
+  removeFavAsync: (id, url) => dispatch(removeFavoriteAsync({ id, url }))
 });
 
 const mapStateToProps = state => ({ favorites: state.favorites });
